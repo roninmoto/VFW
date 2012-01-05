@@ -6,6 +6,7 @@
  -->
 <html>
     <head>
+    
     <!--Meta Data -->
     <meta charset="utf-8" />
     <meta name="description" content="Keep appointments application" />
@@ -17,15 +18,64 @@
         
 	<title>Appointment Keeper App</title>
 	</head>
+	
 	<body>
 	<h1>Add Item</h1>
-	<form action="#" id ="register" method="post>
+	<form action="#" method="post>
     <fieldset>
-        <legend>Information</legend>
-          <ul>
-            <li><label for="name">Name:</label><input type="text" id="name" /></li>
-          </ul>  
-    </fieldset>
+        
+        <ul>
+         
+            <li>
+                <label for="toa">Select Type of Appointment</label>
+                <select id="toa">
+                     <option value="Personal">Personal</option>
+                     <option value="Business">Business</option>
+                     <option value="Other">Other</option>
+                </select>
+            </li>
+        </ul>
+    </fieldset><br />
+    <fieldset>
+    <legend>Appointment Details:</legend>
+        <ul>
+            <li>
+                <label for="range">Level of Importance</label>
+                <input type="range" id="range" name="loi" min="1" max="10"/>
+            </li>
+
+            <li>
+                <label for="name">Whom your meeeting is with:</label>
+                <input type="text" id="name" />
+            </li>
+          
+            <li>
+                <label for="dom">Date of Meeting</label> 
+                <input type="date" min="2012-01-01" max="2020-12-31" id="dom" name="dom" required aria-required="true" placeholder="yyyy-mm-dd"/>
+            </li>
+
+            <li>
+                <label for="tom">Time of Meeting</label>
+                <input type="time" placeholder="0-2400hrs"/>
+            </li>
+                
+            <li>
+                <input type="checkbox" checked value="available" id="available"><label for="available">Available for Appointment</label>
+            </li>
+         
+          
+            <li>
+                <label for"notes">Notes:</label><br />
+                <textarea id="notes"></textarea>
+            </li>
+         </ul>
+     
+    </fieldset><br />
+    <input type="submit" value="Submit" />
+              <ul>
+          <li><a href="#">Clear Stored Data</a></li>
+          <li><a href="#">Display Data</a></li>
+       </ul>
 	</form>
 </body>	
 </html>	
