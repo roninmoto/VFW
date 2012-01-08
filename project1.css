@@ -1,0 +1,41 @@
+/*
+title: additem.html Styles
+by: Joel Betterly
+for: VFW Project 2
+term: 0112
+*/
+
+body{font-family:Arial, Helvetica, san-serif;width: 571px;margin: auto;padding: 10px;}
+#site-wrapper{background: url(../img/iphoneBG.jpg) no-repeat;height:885;padding-top:20}
+#content{width: 480px;height: 690px;overflow: scroll;}
+
+h1 {
+    margin: 10px 20px; 
+    /* adds to outside of border (4 values think clock)*/
+    padding: 10px; 
+    /* adds to inside of border */
+    border: 1px solid black;
+    background: #f0f0f0; 
+    width: 50%;
+    display: ;
+    overflow: ;
+    word-wrap: ;
+}
+
+p{  
+    color: #ff0000;
+    font-style: italic;
+    font-family: Arial, Helvetica, san-serif, "Times New Roman";
+    font-weight: bold ;
+    line-height: 1.2;
+    
+}
+
+label{
+    display: block;
+}
+
+a {
+    outline: 1px dotted blue;
+}
+a:hover{color:green;outline: none;}
