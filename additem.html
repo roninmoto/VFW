@@ -5,7 +5,7 @@
     Term 0112
  -->
 <html>
-    <head>
+  <head>
       <!--Meta Data -->
       <meta charset="utf-8" />
       <meta name="description" content="Keep appointments application" />
@@ -15,15 +15,14 @@
       <meta name="MobileOptimized" content="320" />
       <meta name="viewport" content="user-scalable=no, width=device-width" />
       <title>Appointment Keeper App</title>
-      <link rel="stylesheet" type="text/css" href="styles.css" />
-	</head>
+      <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
 	
-	<body>
+	<body id="additem">
       <header><h1 id="head">Add Item</h1></header>
       <form action="#" method="post" id="kaForm" />
-          <fieldset id="contactFieldset">
+          <fieldset id="kaFieldset">
               <legend>Appointment Details:</legend>
-              <ul id="errors"></ul>
               <ul id="questions">
                   <li id="select"><label for="group">Select Type of Appointment</label></li><br />
                   <li><label for="range">Level of Importance 1-10</label><input type="range" id="range" min="1" max="10"/></li>
@@ -35,17 +34,13 @@
               </ul>
      
           </fieldset><br />
-          <input type="submit" value="Schedule Appt" id="submit" />
+          <input type="submit" value="Schedule Appointment" id="submit" />
       </form>
-      <script src="main.js" type="text/javascript"></script>
+      <script src="js/main.js" type="text/javascript"></script>
       <footer><br />
-	        <a href="#" id="clear">Clear Stored Data</a>
+	        <a href="#" id="clear">Clear Stored Data </a>
           <a href="#" id="displayLink">Display Data</a>
           <a href="additem.html" id="addNew" style="display:none;">Add New Item</a>
       </footer>
   </body>	
 </html>	
-
-<!---1pts Format: Make sure your formatting is consistent. Line 73 is incorrect. Lines 10-19 should also be indented as they are child elements of the head tag.
--6pts Syntax: Missing closing quotation after "post" on line 24. Missing equals sign in the label tag for attribute on line 66.
--1pts Consistency: Time of meeting input does not have an ID that corresponds to it's label.-->
