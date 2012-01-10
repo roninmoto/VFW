@@ -63,13 +63,13 @@ window.addEventListener("DOMContentLoaded", function(){
       
       getCheckboxValue();
       var item           = {};
-          item.group     = ["Group", $('groups').value]; 
-          item.range     = ["Level of Importance", $('range').value];
-          item.name      = ["Name of Person", $('name').value];
-          item.date      = ["Date:", $('date').value];
-          item.tom       = ["Time of Meeting", $('tom').value];
-          item.available = ["Available for Meeting:", availableValue];
-          item.notes     = ["Notes", $('notes').value];
+          item.group     = ["Group: ", $('groups').value]; 
+          item.range     = ["Level of Importance: ", $('range').value];
+          item.name      = ["Name of Person: ", $('name').value];
+          item.date      = ["Date: ", $('date').value];
+          item.tom       = ["Time of Meeting: ", $('tom').value];
+          item.available = ["Available for Meeting: ", availableValue];
+          item.notes     = ["Notes: ", $('notes').value];
       //Save data to local storage
       localStorage.setItem(id, JSON.stringify(item));
           
