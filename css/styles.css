@@ -1,0 +1,130 @@
+/*
+title: additem.html Styles
+by: Joel Betterly
+for: VFW Project 2
+term: 0112
+*/
+
+#index{ /* Index.html */
+    font-family:Arial, Helvetica, san-serif;
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    background-color: rgb(225,225,225);
+    background-image: url(cal.png);
+    background-repeat: no-repeat;
+}
+
+#additem{ /* AddItem.html */
+    font-family:Arial, Helvetica, san-serif;
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(128,128,128);
+    background-image: url(background.jpg);
+}
+
+#heading{
+    color: blue;
+    width: 100%;
+    font-size: 24px;
+    font-style: bold;
+    font-family: Arial, Helvetica, san-serif;
+    font-weight: bold ;
+    line-height: 1.4
+}
+
+#desc{ /* Index.html */
+    color: blue;
+    width: 100%;
+    font-style: bold;
+    font-family: Arial, Helvetica, san-serif;
+    font-weight: bold ;
+    line-height: 1
+}
+
+#link{ /* Index.html */
+    color: blue;
+    width: 100%;
+    font-style: bold;
+    font-family: Arial, Helvetica, san-serif;
+    font-weight: bold ;
+    line-height: 1
+}
+
+#link:hover{color:green;outline: none;}
+
+/* AddItem.html from here to end*/
+h1 {
+    margin: 1px 5px 5px 1px;
+    text-align: center; 
+    color: green;
+    padding: 5px; 
+    border: 1px solid black;
+    background: #f0f0f0; 
+    width: 96%;
+}
+
+Fieldset{  
+    color: black;
+    background: #f0f0f0;
+    font-style: bold;
+    font-family: Arial, Helvetica, san-serif;
+    font-weight: bold ;
+    line-height: 1.4;
+    
+}
+
+legend{  
+    color: green;
+    font-size: 24px;
+    font-style: italic;
+    font-family: Arial, Helvetica, san-serif;
+    font-weight: bold ;
+    line-height: 1.4;
+}
+
+
+#range{
+    display: block;
+}
+
+#name{
+    display: block;
+}
+
+#date{
+    display: block;
+}
+
+#tom{
+    display: block;
+}
+    
+#available{
+    margin: 5px 15px 8px 1px;
+    display: inline;
+}
+
+input{
+    color: green;
+    font-size: 18px;
+    font-style: bold;
+    font-family: Arial, Helvetica, san-serif;
+    font-weight: bold ;
+    line-height: 1.2;
+}
+
+#clear {
+    color:  blue;
+    padding: 5px;
+}
+
+#displayLink {
+    color:  blue;
+    padding: 5px;
+}
+
+#clear:hover{color:green;outline: none;}
+#displayLink:hover{color:green;outline: none;}
+#addNew:hover{color:green;outline: none;}
