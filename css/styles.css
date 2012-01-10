@@ -55,7 +55,7 @@ term: 0112
 #link:hover{color:green;outline: none;}
 
 /* AddItem.html from here to end*/
-h1 {
+h1{
     margin: 1px 5px 5px 1px;
     text-align: center; 
     color: green;
@@ -84,6 +84,15 @@ legend{
     line-height: 1.4;
 }
 
+#items{
+    margin: 1px 5px 5px 1px;
+    text-align: left; 
+    color: green;
+    padding: 5px; 
+    border: 1px solid black;
+    background: #f0f0f0; 
+    width: 96%;
+}
 
 #range{
     display: block;
@@ -115,12 +124,17 @@ input{
     line-height: 1.2;
 }
 
-#clear {
+#clear{
     color:  blue;
     padding: 5px;
 }
 
-#displayLink {
+#displayLink{
+    color:  blue;
+    padding: 5px;
+}
+
+#addNew{
     color:  blue;
     padding: 5px;
 }
