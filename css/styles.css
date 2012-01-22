@@ -1,7 +1,7 @@
 /*
 title: additem.html Styles
 by: Joel Betterly
-for: VFW Project 2
+for: VFW Project 4
 term: 0112
 */
 
@@ -58,16 +58,22 @@ h1{
     color: green;
     padding: 5px; 
     border: 1px solid black;
-    background: #f0f0f0; 
+   /* background: #f0f0f0; */
+    background-image: -webkit-linear-gradient(top, #e6e6e6 20%, #969696 100%);
     width: 96%;
+    border-radius: 10px;
+    box-shadow: 2px 5px 0 0 rgba(72,72,72,1);
 }
 
 Fieldset{  
     color: black;
-    background: #f0f0f0;
+    /* background: #f0f0f0;*/
+    background-image: -webkit-linear-gradient(top, #e6e6e6 5%, #969696 100%);
     font-family: Arial, Helvetica, san-serif;
     font-weight: bold ;
     line-height: 1.4;
+    border-radius: 10px;
+    box-shadow: 2px 5px 0 0 rgba(72,72,72,1);
     
 }
 
@@ -79,6 +85,9 @@ legend{
     font-weight: bold ;
     line-height: 1.4;
 }
+img{
+    padding: 5px; 
+}
 
 #items{
     margin: 1px 5px 5px 1px;
@@ -86,8 +95,11 @@ legend{
     color: green;
     padding: 5px; 
     border: 1px solid black;
-    background: #f0f0f0; 
+    /* background: #f0f0f0;  */
+    background-image: -webkit-linear-gradient(top, #e6e6e6 20%, #aaaaaa 50%, #e6e6e6 100%);
     width: 96%;
+    border-radius: 10px;
+    box-shadow: 2px 5px 0 0 rgba(72,72,72,1);
 }
 
 #range{
