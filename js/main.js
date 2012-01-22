@@ -87,7 +87,8 @@ window.addEventListener("DOMContentLoaded", function(){
   function getData(){
       toggleControls("on");
       if(localStorage.length === 0){
-          alert("Local Storage is empty.");
+          alert("Local Storage is empty. JSON data was added.");
+          autoFillData();
       }
       //Make Data from local Storage
       var makeDiv = document.createElement('div');
@@ -105,6 +106,7 @@ window.addEventListener("DOMContentLoaded", function(){
           var obj = JSON.parse(value);  
           var makeSubList = document.createElement('ul');
           makeli.appendChild(makeSubList);
+          getImage(obj.group[1], makeSubList);
           for(var n in obj){
                var makeSubli = document.createElement('li');
                makeSubList.appendChild(makeSubli);
@@ -116,6 +118,24 @@ window.addEventListener("DOMContentLoaded", function(){
       }
   }
   
+  //Get Image for selection
+  function getImage(catName, makeSubList){
+      var imageLi = document.createElement('li');
+      makeSubList.appendChild(imageLi);
+      var newImg = document.createElement('img');
+      var setSrc = newImg.setAttribute("src", "images/"+ catName + ".png");
+      imageLi.appendChild(newImg);
+  }
+  
+  //Auto Populate Local Storage
+  function autoFillData(){
+      for(var n in json){
+          var id = Math.floor(Math.random()*123456789);
+          localStorage.setItem(id, JSON.stringify(json[n]));
+      }
+  
+  }
+    
   //Make Item Links
   //Create the edit/delete links for each stored item when displayed
   function makeItemLinks(key, linksLi){
@@ -123,7 +143,7 @@ window.addEventListener("DOMContentLoaded", function(){
     var editLink = document.createElement('a');
     editLink.href = "#";
     editLink.key = key;
-    var editText = "Edit Appt";
+    var editText = "Edit Appointment";
     editLink.addEventListener("click", editItem);
     editLink.innerHTML = editText;
     linksLi.appendChild(editLink);
@@ -136,7 +156,7 @@ window.addEventListener("DOMContentLoaded", function(){
     var deleteLink = document.createElement('a');
     deleteLink.href = "#";
     deleteLink.key = key;
-    var deleteText = "Delete Appt";
+    var deleteText = "Delete Appointment";
     deleteLink.addEventListener("click", deleteItem);
     deleteLink.innerHTML = deleteText;
     linksLi.appendChild(deleteLink);
@@ -165,7 +185,7 @@ window.addEventListener("DOMContentLoaded", function(){
     //Remove the initial listener from the input 'save appt' button.
     save.removeEventListener("click", storeData);
     //Change submit button to edit button
-    $('submit').value = "Edit Appt";
+    $('submit').value = "Edit Appointment";
     var editSubmit = $('submit');
     //save the key value established in this function as a property of the editSubmit event
     //so we can use that value when we save the data we edited.
